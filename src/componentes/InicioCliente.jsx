@@ -1,3 +1,5 @@
+import Usuario from "./Usuario";
+
 const InicioCliente = () =>{
     return(
         <form>
@@ -7,9 +9,9 @@ const InicioCliente = () =>{
             </div>
             <div>
                 <label htmlFor="">Ingrese Usuario</label>
-                <input type="text" name="" id="" />
+                <input type="text" name="" id="cliente" placeholder="Franco"/>
                 <label htmlFor="">Ingrese Email</label>
-                <input type="email" name="" id="" />
+                <input type="email" name="" id="email"  placeholder="franco@gmail.com"/>
             </div>
             <div>
                 <button>Ingresar con Gmail</button>
@@ -17,6 +19,7 @@ const InicioCliente = () =>{
             <div>
                 <button type="submit">Ingresar</button>
             </div>
+            <Usuario/>
         </form>
     )
 }

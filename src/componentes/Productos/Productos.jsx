@@ -1,5 +1,6 @@
-import Cards from "./Carts";
-import data from "../data/api.json"
+import Cards from "../Carts/Carts";
+import data from "../../data/api.json"
+import styles from "./Productos.module.css"
 
 const Productos = () =>{
 
@@ -11,7 +12,7 @@ const Productos = () =>{
     "precio":
     "descripcion" */
     return(
-        <div>
+        <div className={styles.container}>
             {
                 libros.map(libro => {
                     return(
